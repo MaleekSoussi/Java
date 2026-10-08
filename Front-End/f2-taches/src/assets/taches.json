@@ -1,0 +1,32 @@
+[
+  {
+    "titre": "Installer Node.js et PNPM",
+    "faite": true,
+    "id": 1
+  },
+  {
+    "titre": "Installer VS Code",
+    "faite": true,
+    "id": 2
+  },
+  {
+    "titre": "Revoir les base de JavaScript",
+    "faite": true,
+    "id": 3
+  },
+  {
+    "titre": "Terminer l'exercice sur les traitements asynchrones ",
+    "faite": false,
+    "id": 4
+  },
+  {
+    "titre": "Trouver un tuto sur TypeScript",
+    "faite": false,
+    "id": 5
+  },
+  {
+    "titre": "S'inscrire à la formation Vue.js",
+    "faite": false,
+    "id": 6
+  }
+]

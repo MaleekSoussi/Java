@@ -1,0 +1,33 @@
+package com.example.demo.exception;
+
+import org.springframework.http.HttpStatus;
+
+public class ApiException extends RuntimeException {
+
+    private final HttpStatus status;
+
+    public ApiException(HttpStatus status, String message) {
+        super(message);
+        this.status = status;
+    }
+
+    public HttpStatus getStatus() {
+        return status;
+    }
+
+    public static ApiException badRequest(String message) {
+        return new ApiException(HttpStatus.BAD_REQUEST, message);      // 400
+    }
+
+    public static ApiException unauthorized(String message) {
+        return new ApiException(HttpStatus.UNAUTHORIZED, message);     // 401
+    }
+
+    public static ApiException forbidden(String message) {
+        return new ApiException(HttpStatus.FORBIDDEN, message);        // 403
+    }
+
+    public static ApiException notFound(String message) {
+        return new ApiException(HttpStatus.NOT_FOUND, message);        // 404
+    }
+}

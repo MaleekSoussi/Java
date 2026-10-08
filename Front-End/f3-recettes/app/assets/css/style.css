@@ -1,0 +1,83 @@
+@import url("https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css");
+
+body {
+  margin: 0;
+}
+
+.page-header {
+  padding: 0.6em 1rem;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  background-color: lightskyblue;
+  border-bottom: 1px solid mediumblue;
+}
+
+.page-header .logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: mediumblue;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page-header nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.container {
+  padding-top: 1rem;
+  max-width: calc(100vi - 3rem);
+}
+
+.card {
+  margin: 0;
+  align-self: flex-start;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card img {
+  width: calc(100% + 2 * var(--pico-block-spacing-horizontal));
+  max-width: none;
+  height: auto;
+  margin: calc(var(--pico-block-spacing-horizontal) *-1);
+  margin-bottom: 1rem;
+}
+
+
+.recettes-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
+  --width: 300px;
+}
+
+.recettes-grid>* {
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+div.busy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  padding: 0 0.8rem;
+  background: white;
+}
